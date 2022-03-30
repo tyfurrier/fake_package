@@ -17,7 +17,7 @@ REQUIRED = [
         ]
 
 
-username: str = input("Please enter your atscale username registered for AtScale Connect")
+username: str = getpass.getpass("Please enter your atscale username registered for AtScale Connect: ")
 password: str = getpass.getpass(f"Please enter the password for {username}: ")
 
 
